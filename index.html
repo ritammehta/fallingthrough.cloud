@@ -2,72 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1440, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
-    <!-- <link rel="stylesheet" href="assets/reset.css"> -->
     <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
     <title>Hello World</title>
 </head>
 <body>
+    <!-- Blinking banner across the top -->
+    <div class="interactive-element banner-top" 
+         data-wireframe-src="media/wireframes/banner.jpg">
+        <img src="media/rug_pull_enterprises.gif" alt="Logo" style="width: 600px; height: 300px;">
+    </div>
+
+    <!-- Big opposite blinking button overlaid on banner - Column 1 -->
+    <div class="interactive-element blinking-banner" 
+        data-wireframe-src="media/wireframes/click_me.jpg"
+        style="left: 10px; top: 60px; width: 300px; height: 80px; z-index: 1001; background-color: var(--sgbus-green); border: 3px outset #5cb85c; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: #000; box-shadow: inset 0 3px 6px rgba(255,255,255,0.4), inset 0 -3px 6px rgba(0,0,0,0.2), 0 4px 8px rgba(0,0,0,0.3);">
+       CLICK ME!
+    </div>
+
     
-    <a href="#first">
-        <figure class="slide text" id="title-slide">
-            <h1>"Rugged" Individualism</h1>
-        </figure>
-    </a>
-    <a href="#second">
-        <figure class="slide text" id="first">
-            <p>I decided to go and try and document my experience of election night on the eve of Zohran's primary win. I'd been canvassing for him since January and was really emotionally invested in his success. The polls were really close, and I knew that regardless of how it went, there would be some kind of “rug pull,” either on the more establishment side or the side of the young progressives. If he lost, I thought I’d be able to experience and document my experience of surprise / devastation.</p>
-            <figcaption>Rationale</figcaption>
-        </figure>
-    </a>
-    <a href="#third">
-        <figure class="slide image" id="second">
-            <img src="media/fig_2.jpg" alt="Screenshot of my feelings about election">
-            <figcaption>For reasons you'll see, I wasn't able to get photographic evidence of the experience. But this screenshot, I think, encapsulates my mindset going into the event, knowing that the chances were looking better and better that we'd get a win. I was being flooded with surprise and joy. I could feel myself light up internally. I felt a roaring wave inside of me, and it felt a bit out of control with emotion.</figcaption>
-        </figure>
-    </a>
-    <a href="#fourth">
-        <figure class="slide image" id="third">
-            <img src="media/fig_3.png" alt="Rug pull">
-            <figcaption>The red box here represents a big, meaningful ex, my first ever partner. We dated for years and broke up one and a half years ago. We haven't seen each other in a year, save a single chance 2 minute run in. We don't talk anymore. I received this text at the same time as I saw one of her friends at the event, who told me she was outside.</figcaption>
-        </figure>
-    </a>
-    <a href="#fifth">
-        <figure class="slide text" id="fourth">
-            <p>As soon as I heard she was there, I felt that intense feeling–the RUG PULL. My perspective went from broad to narrow. I heard my own breathing in my ears, and my stomach dropped out. I felt like I couldn't focus on or think about anything else, and I felt horrified at the way my context had collapsed inwards on itself. It is hard to fight solipsism when you're activated. I felt at a loss, entirely, of how to act or behave. I left immediately for home.</p>
-            <figcaption>THE PULL</figcaption>
-        </figure>
-    </a>
-    <a href="#sixth">
-        <figure class="slide image" id="fifth">
-            <img src="media/fig_5.jpg" alt="Rug pull">
-            <figcaption>Immediate visceral feelings. It's always in your stomach...</figcaption>
-        </figure>
-    </a>
-    <a href="#seventh">
-        <figure class="slide image" id="sixth">
-            <img src="media/fig_6.jpg" alt="Rug pull">
-            <figcaption>Interesting to consider the opposite–that I’d pulled the rug out on her night too, and that she had the same reaction that I did. I wonder if watching someone else go through the moment of collapse / devastation activates a similar affect as going through it yourself. Or even just imagining it, as I was doing in that moment.</figcaption>
-        </figure>
-    </a>
-    <a href="#eighth">
-        <figure class="slide image" id="seventh">
-            <img src="media/fig_7.jpg" alt="Rug pull">
-            <figcaption>As the night continued and I rotted at home, I found myself unable to focus on the joy of victory, even as I scrolled all the headlines. I felt small, shaken, in my shell, and pathetic for feeling this way in the wake of what was surely a completely normal type event that happens to everyone all the time.</figcaption>
-        </figure>
-    </a>
-    <a href="#ninth">
-        <figure class="slide image" id="eighth">
-            <img src="media/fig_9.jpg" alt="Rug pull">
-            <figcaption></figcaption>
-        </figure>
-    </a>
-    <a href="#title-slide">
-        <figure class="slide image" id="ninth">
-            <img src="media/fig_10.jpg" alt="Rug pull">
-            <figcaption></figcaption>
-        </figure>
-    </a>
+    
+    <!-- Big blinking button overlaid on banner - Column 4 -->
+    <div class="interactive-element opposite-blinking-banner" 
+         data-wireframe-src="media/wireframes/you_win.jpg"
+         style="left: 1110px; top: 60px; width: 300px; height: 80px; z-index: 1001; background-color: var(--celestial-blue); border: 3px outset #5cb85c; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: #000; box-shadow: inset 0 3px 6px rgba(255,255,255,0.4), inset 0 -3px 6px rgba(0,0,0,0.2), 0 4px 8px rgba(0,0,0,0.3);">
+        YOU WIN!
+    </div>
+
+  <!-- Popup element - Column 1 -->
+  <div class="interactive-element popup-element" 
+  data-wireframe-src="media/wireframes/popup.jpg" 
+  style="left: 10px; top: 220px; width: 340px; height: 200px;">
+    <div class="popup-header">
+      <span class="popup-title">Alert</span>
+      <div class="popup-controls">
+        <button class="popup-btn minimize">–</button>
+        <button class="popup-btn maximize">□</button>
+        <button class="popup-btn close">×</button>
+      </div>
+    </div>
+    <div class="popup-content">
+      <h1>YOUR REALITY MAY BE COMPROMISED</h1>
+      <p>This is a warning. Clicking on anything on this page may cause reality to decompose. This may cause feelings of sudden nausea and disorientation, as well as strange feelings of freedom and release.</p>
+    </div>
+  </div>
+  
+  <!-- Carpet2 gif - Column 1 below popup -->
+  <img class="interactive-element" 
+       src="media/carpet2.gif" 
+       data-wireframe-src="media/wireframes/carpet2.jpg"
+       style="left: 10px; top: 440px; width: 103px; height: 87px;">
+  
+  <!-- Try it button - between carpet2 and middle column -->
+  <button class="interactive-element" 
+          data-wireframe-src="media/wireframes/try_it.jpg"
+          style="left: 130px; top: 450px; width: 200px; height: 60px; background-color: var(--icterine); border: 2px outset #e6d200; border-radius: 4px; font-size: 18px; font-weight: bold; color: #333; cursor: pointer; box-shadow: inset 0 2px 4px rgba(255,255,255,0.4), inset 0 -2px 4px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.3);">
+    TRY IT
+  </button>
+  
+  <!-- Carpet_df with text overlay below carpet2 -->
+  <div class="interactive-element" 
+       data-wireframe-src="media/wireframes/defy_expectation_carpet.jpg"
+       style="left: 10px; top: 540px; width: 350px; height: 250px;">
+    <img src="media/carpet_df.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--lavender-pink); font-size: 48px; font-weight: bold; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, -3px 0 0 #000, 3px 0 0 #000, 0 -3px 0 #000, 0 3px 0 #000; text-align: center; line-height: 1.1; white-space: nowrap;">
+      I<br>DEFY<br>EXPECTATION
+    </div>
+  </div>
+  
+  <!-- Carpet gif - Columns 2 & 3 -->
+  <img class="interactive-element" 
+       src="media/carpet1.gif" 
+       data-wireframe-src="media/wireframes/carpet1.jpg"
+       style="left: 370px; top: 220px; width: 700px; height: 111px;">
+  
+  <!-- Text element below carpet - Columns 2 & 3 -->
+  <div class="interactive-element" 
+       data-wireframe-src="media/wireframes/paragraph_text.jpg"
+       style="left: 370px; top: 350px; width: 700px; height: 450px; background-color: var(--lavender-pink); border: 2px solid #d63384; border-radius: 8px; padding: 20px; box-sizing: border-box; font-size: 20px; font-family: Arial, sans-serif; color: #333;">
+    <p>At Rug Pull Enterprises, we believe in the power of the false business as a way to convey an idea. In fact, we're kind of obsessed with it.</p>
+    <p>We are not incorporated, nor do we have exist. When you're done on this page, you might not even remember that we had a website at all. It may all feel like a dream, or a hallucination.</p>
+    <p>Will you remember what it looked like before? Did you care? Did the things on this page dare you to click, to be invested, to care?</p>
+    <p>It looks this way for a reason. These are some of the earliest interfaces we learned to work with online. Colorful, loud beckoning, asking us to interact.</p>
+    <p>Is a website a world? Is it a place where you are? How do you feel when you leave? How do you feel if IT leaves?</p>
+    <p>Your actions change the nature of a website. That's true here too.</p>
+  </div>
+  
+  <!-- Login box - Column 4 -->
+  <div class="interactive-element" 
+       data-wireframe-src="media/wireframes/login.jpg"
+       style="left: 1100px; top: 250px; width: 320px; height: 200px; background-color: #f0f0f0; border: 2px inset #c0c0c0; padding: 15px; box-sizing: border-box; font-family: 'MS Sans Serif', Arial, sans-serif; font-size: 11px;">
+    <div style="background-color: #008080; color: white; padding: 2px 4px; margin: -15px -15px 10px -15px; font-weight: bold; font-size: 11px;">
+      Member Login
+    </div>
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="padding: 3px; font-weight: bold;">Username:</td>
+        <td style="padding: 3px;">
+          <input type="text" style="width: 100%; border: 1px inset #c0c0c0; padding: 2px; font-size: 11px; font-family: 'MS Sans Serif', Arial, sans-serif;">
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 3px; font-weight: bold;">Password:</td>
+        <td style="padding: 3px;">
+          <input type="password" style="width: 100%; border: 1px inset #c0c0c0; padding: 2px; font-size: 11px; font-family: 'MS Sans Serif', Arial, sans-serif;">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding: 8px 3px 3px 3px; text-align: center;">
+          <button style="background-color: #d0d0d0; border: 1px outset #c0c0c0; padding: 4px 12px; font-size: 11px; font-weight: bold; cursor: pointer; box-shadow: inset 0 1px 2px rgba(255,255,255,0.4), inset 0 -1px 2px rgba(0,0,0,0.2);">
+            LOGIN
+          </button>
+        </td>
+      </tr>
+    </table>
+    <div style="text-align: center; margin-top: 8px; font-size: 10px; color: #666;">
+      <a href="#" style="color: #0000ff; text-decoration: underline;">Register</a> | 
+      <a href="#" style="color: #0000ff; text-decoration: underline;">Forgot Password?</a>
+    </div>
+  </div>
+  
+  <!-- Carpet3 gif underneath login box - Column 4 -->
+  <img class="interactive-element" 
+       src="media/carpet3.gif" 
+       data-wireframe-src="media/wireframes/carpet3.jpg"
+       style="left: 1100px; top: 470px; width: 65px; height: 66px;">
+  
+  <!-- Big blinking red arrow pointing to carpet3 -->
+  <div class="blinking-banner interactive-element" 
+       data-wireframe-src="media/wireframes/arrow.jpg"
+       style="left: 1200px; top: 470px; width: 120px; height: 80px; background-color: red; clip-path: polygon(40% 0%, 40% 35%, 100% 35%, 100% 65%, 40% 65%, 40% 100%, 0% 50%);">
+  </div>
+  
+  <!-- Big laughing emoji -->
+  <div class="interactive-element" 
+       data-wireframe-src="media/wireframes/emoji.jpg"
+       style="left: 1340px; top: 480px; width: 80px; height: 80px; font-size: 60px; display: flex; align-items: center; justify-content: center; filter: contrast(200%) saturate(300%) hue-rotate(10deg) drop-shadow(2px 2px 0px red) drop-shadow(-2px -2px 0px cyan); transform: rotate(-2deg); image-rendering: pixelated;">
+    😂
+  </div>
+  
+  <!-- Big flashy download button - Column 4 -->
+  <div class="interactive-element" 
+       data-wireframe-src="media/wireframes/download_now.jpg"
+       style="left: 1100px; top: 580px; width: 320px; height: 80px; background: linear-gradient(135deg, var(--icterine) 0%, #ffff00 25%, #ffd700 50%, #ffff00 75%, var(--icterine) 100%); border: 4px outset #ffd700; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: #333; text-shadow: 2px 2px 0px rgba(255,255,255,0.8); cursor: pointer; box-shadow: inset 0 4px 8px rgba(255,255,255,0.6), inset 0 -4px 8px rgba(0,0,0,0.3), 0 6px 12px rgba(0,0,0,0.4); overflow: hidden;">
+    <span style="margin-right: 15px;">DOWNLOAD NOW</span>
+    <div style="width: 50px; height: 50px; background-color: #333; clip-path: polygon(30% 0%, 70% 0%, 70% 70%, 100% 70%, 50% 100%, 0% 70%, 30% 70%);"></div>
+  </div>
+  
+  <!-- Add more elements as you test -->
+       
 </body>
 </html>
